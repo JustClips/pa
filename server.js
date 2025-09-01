@@ -5,7 +5,7 @@ app.use(cors());
 app.use(express.json({ limit: '256kb' }));
 
 // Ultra-strict memory limits
-const MAX_BRAINROTS = 50;     // Reduced from 200 to 50
+const MAX_BRAINROTS = 150;     // Reduced from 200 to 50
 const MAX_PLAYERS = 100;
 
 // Use Maps for better performance and memory efficiency
@@ -18,7 +18,7 @@ const HEARTBEAT_TIMEOUT_MS = 30 * 1000; // 30 seconds
 const PLAYER_TIMEOUT_MS = 30 * 1000;    // 30 seconds
 
 // Limit for response size
-const MAX_RESPONSE_BRAINROTS = 20; // Only send top 20 brainrots
+const MAX_RESPONSE_BRAINROTS = 100; // Only send top 20 brainrots
 
 function now() {
   return Date.now();
