@@ -13,7 +13,7 @@ const brainrots = new Map();
 const activePlayers = new Map();
 
 // Keep your original timeouts
-const BRAINROT_LIVETIME_MS = 10 * 1000; // 30 seconds
+const BRAINROT_LIVETIME_MS = 30 * 1000; // 30 seconds
 const HEARTBEAT_TIMEOUT_MS = 10 * 1000; // 30 seconds
 const PLAYER_TIMEOUT_MS = 30 * 1000;    // 30 seconds
 
